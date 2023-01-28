@@ -64,8 +64,6 @@ button {
     padding: 40px;
     border-radius: 5px;
     margin-top: 3rem; 
-    
-  
     background-color: rgba(129, 129, 121, 0.45);
     display: flex;
 border: none;
@@ -77,9 +75,6 @@ border: none;
     width: 130px;
     margin: -23px;
     padding: -20px;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    transform-origin: bottom;
 }
 
 
@@ -93,9 +88,6 @@ border: none;
     width: 130px;
     margin: -23px;
     padding: -20px;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    transform-origin: bottom;
 }
 
 #rock {
@@ -103,37 +95,26 @@ border: none;
     width: 130px;
     margin: -23px;
     padding: -20px;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    transform-origin: bottom;
+   
 }
 
 
 button:hover {
     background-color: ghostwhite;
     cursor: pointer;
-    animation-name: bounce;
-    animation-timing-function: ease;
 }
-
-
-  
 
 
 
 #paper:hover {
     background-color: ghostwhite;
     cursor: pointer;
-    animation-name: bounce;
-    animation-timing-function: ease;
 }
 
 
 #scissors:hover {
     background-color: ghostwhite;
     cursor: pointer;
-    animation-name: bounce;
-    animation-timing-function: ease;
 }
 
 
