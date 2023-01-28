@@ -11,17 +11,21 @@
 <body>
     <div class="main">
         <h1> MAKE YOUR CHOICE ... BUT CHOOSE WISELY </h1>
-        <div id="icons">
-            <img id="rock" src="IMG/da268f06e621b21.png" alt="">
-            <img id="paper" src="IMG/590d6ce38673e40.png" alt="">
-            <img id="scissors" src="Screen_Shot_2023-01-28_at_18.23.53-removebg-preview.png" alt="">
+        <div id="choices">
+            <h2>Computer Choice: <span id="computer-choice"></span></h2>
+            <h2>Your Choice: <span id="your-choice"></span></h2>
         </div>
-        <div>
-            <p id="message"> YOU WON!</p>
+        <div id="icons">
+            <button className="button"><img src="IMG/da268f06e621b21.png" alt="" id="rock" /></button>
+            <button className="button"> <img src="IMG/590d6ce38673e40.png" alt="" id="paper" /> </button>
+            <button className="button"><img id="scissors" src="Screen_Shot_2023-01-28_at_18.23.53-removebg-preview.png" alt="" id="scissors"> </button>
+        </div>
+        <div id="displayresult">
+            <h1><span id="result"></span></h1>
         </div>
     </div>
     
-    <audio id="player" autoplay loop controls>
+   <audio id="player" autoplay loop controls>
         <source src="yt5s.io - Clint Eastwood [8 Bit Cover Tribute to Gorillaz] - 8 Bit Universe (320 kbps).mp3" type="audio/mp3">
         <p>If you are reading this, it is because your browser does not support the audio element.</p>
     </audio>
@@ -30,6 +34,8 @@
 
 
 
-    <!--<script src="javascript.js"></script>-->
+    
+    
+    <script src="javascript.js" ></script>
 </body>
 </html>
