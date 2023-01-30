@@ -5,8 +5,8 @@
 
 @font-face {
     font-family: 'immortalregular';
-    src: url('../Rock\ Paper\ Scissors/immortal-webfont.woff') format('woff2'),
-         url('../Rock\ Paper\ Scissors/immortal-webfont.woff') format('woff');
+    src: url('Rock\ Paper\ Scissors/immortal-webfont.woff') format('woff2'),
+         url('Rock\ Paper\ Scissors/immortal-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
