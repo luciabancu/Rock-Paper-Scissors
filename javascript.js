@@ -2,28 +2,36 @@ const computerChoiceDisplay = document.getElementById ('computer-choice')
 const yourChoiceDisplay = document.getElementById ('your-choice')
 const resultDisplay = document.getElementById ('result')
 const possibleChoices = document.querySelectorAll('button')
+
 let yourChoice
 let computerChoice
 let result
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click',(e) => 
 {
+    computerChoiceDisplay.innerHTML = '...'
+    resultDisplay.innerHTML = '...'
     yourChoice = e.target.id
+    if(e.target.id===""){
+        yourChoice = e.target.parentElement.id
+    }
     yourChoiceDisplay.innerHTML = yourChoice
-    generateComputerChoice()
-    getResult ()
+    setTimeout(generateComputerChoice, 1000);
+    setTimeout(getResult, 1000)
+
 }))
 
 function generateComputerChoice() {
-    const randomNumber = Math.floor(Math.random() * 3) + 1
     
-    if (randomNumber === 1) {
+    const randomNumber = Math.floor(Math.random() * 3) 
+    console.log (randomNumber)
+    if (randomNumber === 0) {
         computerChoice = 'rock'
     }
-    if (randomNumber === 2) {
+    if (randomNumber === 1) {
         computerChoice = 'paper'
     }
-    if (randomNumber === 3) {
+    if (randomNumber === 2) {
         computerChoice = 'scissors'
     }
 

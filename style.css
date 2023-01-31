@@ -70,43 +70,57 @@ width: 80%;
 
 
 button {
- 
-    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 40px; */
+    width: 130px;
+    height: 130px;
     border-radius: 5px;
     margin-top: 3rem; 
     background-color: rgba(129, 129, 121, 0.45);
     display: flex;
-border: none;
+    border: none;
 
 }
 
-#scissors {
-    height: 130px;
-    width: 130px;
-    margin: -23px;
-    padding: -20px;
+.prettyBorder{
+    border: outset 2px pink;
 }
 
+/* #scissors {
+    
+} */
+
+.imageStyle{
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.imageStyle:hover{
+    background-color: ghostwhite;
+    cursor: pointer;
+}
 
 #message {
     font-size: xx-large;
     padding-bottom: 3rem;
 }
 
-#paper {
+/* #paper {
     height: 130px;
     width: 130px;
     margin: -23px;
     padding: -20px;
-}
-
+} */
+/* 
 #rock {
     height: 130px;
     width: 130px;
     margin: -23px;
     padding: -20px;
    
-}
+} */
 
 
 button:hover {
@@ -166,14 +180,6 @@ h1 {
 
 
 
-button {
-
-    max-width: 130px;
-    max-height: 130px;
-
-}
-
-
 #icons {
     display: flex;
     flex-direction: row;
@@ -181,24 +187,14 @@ button {
 
 }
 
-#rock  {
-    width: 80px;
-    height: 80px;
-    margin: -15px;
-  
-}
 
-#paper {
+
+.imageStyle{
     max-width: 80px;
     max-height: 80px;
     margin: -15px;
 }
 
-#scissors {
-    max-width: 80px;
-    max-height: 80px;
-    margin: -15px;
-}
 
 #displayresult {
     margin-top: 1.5rem;
