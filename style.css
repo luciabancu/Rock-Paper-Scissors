@@ -1,16 +1,17 @@
-:root {
-    font-family: immortal;
-    color: purple;
-}
-
 @font-face {
-    font-family: 'immortalregular';
-    src: url('immortal-webfont.woff2') format('woff2'),
-         url('immortal-webfont.woff') format('woff');
+    font-family: immortalregular;
+    src: url(immortal-webfont.woff2) format('woff2'),
+         url(immortal-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
+:root {
+    font-family: immortalregular;
+    color: purple;
+}
+
 
 body {
     background-image: url(bgtest.png);
